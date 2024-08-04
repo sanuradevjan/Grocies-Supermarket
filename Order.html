@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocies Supermarket - Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/sem2.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./CSS/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./CSS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./CSS/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <section>
+      <nav><!--This is the navigation tag which holds the navigation of the website-->
+        <img src="CSS/Images/cart.png" alt="Logo" class="logo"><!--This is the logo of the website-->
+        <a href="Order.html"><img src="CSS/Images/order.png" alt="cart" class="orderrr"></a>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>        
+          <li><a href="Dairy.html">Dairy</a></li>
+          <li><a href="Vegetables.html">Vegetables</a></li>
+          <li><a href="Fruits.html">Fruits</a></li>
+          <li><a href="Meat & Seafood.html">Meat & Seafood</a></li>
+          <li><a href="Baking & Cooking.html">Baking & Cooking</a></li>
+          <li><a href="Cosmetics & Skin.html">Cosmetics & Skin</a></li>
+        </ul>
+        <div class="navbar">
+          <div class="menu">
+            <button class="menu-name">Menu</button>
+            <div class="menu-content">
+              <a href="index.html">Home</a>        
+              <a href="Dairy.html">Dairy</a>
+              <a href="Vegetables.html">Vegetables</a>
+              <a href="Fruits.html">Fruits</a>
+              <a href="Meat & Seafood.html">Meat & Seafood</a>
+              <a href="Baking & Cooking.html">Baking & Cooking</a>
+              <a href="Cosmetics & Skin.html">Cosmetics & Skin</a>
+            </div>
+          </div> 
+        </div>      
+        <form action="#" method="get"><!-- This form allows users to input text for searching.Users can type their search term in the text box and submit the form to perform a search. -->
+          <input type="text" id="myInput" placeholder="Search">
+        </form>
+      </nav>
+    </section>
+  </header>
+
+  <h1 class="heading"><span> Order Here </span></h1>
+
+  <table id="cartTable" class="ordersum">
+    <thead>
+      <tr>
+        <th class="ordersumth">Item</th>
+        <th class="ordersumth">Quantity/Kg</th>
+        <th class="ordersumth">Price</th>
+        <th class="ordersumth">Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+        <!-- Cart items will be added here -->
+    </tbody>
+    <b><tfoot>
+      <tr>
+        <th colspan="2" class="ordersumth">Total</th>
+        <th id="totalPrice" class="ordersumth">0</th>
+      </tr>
+    </tfoot></b>
+  </table><br>
+  
+  <center>
+    <button id="buyNow" class="btn">Buy Now</button>
+    <button id="addToFavourites" class="btn">Add to Favourites</button><br>
+    <button id="applyFavourites" class="btn">Apply Favourites</button>
+  </center>
+
+  <form id="orderForm" class="orderForm">
+    <div class="cartgrid">
+      <section class="productorderdetails">
+        <h2>Fruits</h2>
+        <div class="item">
+          <label>Apple - Fuji</label>
+          <input type="number" min="0" name="Apple - Fuji" data-price="1930" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Avocado</label>
+          <input type="number" min="0" name="Avocado" data-price="380" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Dragon Fruit</label>
+          <input type="number" min="0" name="Dragon Fruit" data-price="990" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Guava</label>
+          <input type="number" min="0" name="Guava" data-price="270" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Grapes - Red</label>
+          <input type="number" min="0" name="Grapes - Red" data-price="1780" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Melon - Red Fantasy</label>
+          <input type="number" min="0" name="Melon - Red Fantasy" data-price="140" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <button type="button" id="Cart1" class="btn">Add to Cart</button><br><br>
+      </section>
+      
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple - Fuji</td>
+            <td>600.00 g</td>
+            <td>Rs. 1158.00</td>
+          </tr>
+          <tr>
+            <td>Avocado</td>
+            <td>1.00 kg</td>
+            <td>Rs. 380.00</td>
+          </tr>
+          <tr>
+            <td>Dragon Fruit</td>
+            <td>500.00 g</td>
+            <td>Rs. 495.00</td>
+          </tr>
+          <tr>
+            <td>Guava</td>
+            <td>1.00 kg</td>
+            <td>Rs. 270.00</td>
+          </tr>
+          <tr>
+            <td>Grapes - Red</td>
+            <td>500.00 g</td>
+            <td>Rs. 890.00</td>
+          </tr>
+          <tr>
+            <td>Melon - Red Fantasy</td>
+            <td>2.00 kg</td>
+            <td>Rs. 280.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <section class="productorderdetails">
+        <h2>Vegetables</h2>            
+        <div class="item">
+          <label>Carrot</label>
+          <input type="number" min="0" name="Carrot" data-price="380" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Green Beans</label>
+          <input type="number" min="0" name="Green Beans" data-price="270" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Potatoes</label>
+          <input type="number" min="0" name="Potatoes" data-price="420" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Red Onions</label>
+          <input type="number" min="0" name="Red Onions" data-price="470" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Pumpkin</label>
+          <input type="number" min="0" name="Pumpkin" data-price="100" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Tomatoes</label>
+          <input type="number" min="0" name="Tomatoes" data-price="110" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <button type="button" id="Cart2" class="btn">Add to Cart</button><br><br>
+      </section>
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Carrot</td>
+            <td>1.00 kg</td>
+            <td>Rs. 380.00</td>
+          </tr>
+          <tr>
+            <td>Green Beans</td>
+            <td>1.00 kg</td>
+            <td>Rs. 270.00</td>
+          </tr>
+          <tr>
+            <td>Potatoes</td>
+            <td>1.00 kg</td>
+            <td>Rs. 420.00</td>
+          </tr>
+          <tr>
+            <td>Red Onions</td>
+            <td>1.00 kg</td>
+            <td>Rs. 470.00</td>
+          </tr>
+          <tr>
+            <td>Pumpkin</td>
+            <td>1.00 kg</td>
+            <td>Rs. 100.00</td>
+          </tr>
+          <tr>
+            <td>Tomatoes</td>
+            <td>1.00 kg</td>
+            <td>Rs. 110.00</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <section class="productorderdetails">
+        <h2>Dairy</h2>
+        <div class="item">
+          <label>Ambewela Flavoured Milk Choco</label>
+          <input type="number" min="0" name="Ambewela Flavoured Milk Choco" data-price="580" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <div class="item">
+          <label>Astra Fat Spread Butter</label>
+          <input type="number" min="0" name="Astra Fat Spread Butter" data-price="200" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <div class="item">
+          <label>Happy Cow Creamy Cheese</label>
+          <input type="number" min="0" name="Happy Cow Creamy Cheese" data-price="1220" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <div class="item">
+          <label>Kotmale Drinking Yoghurt Strawberry</label>
+          <input type="number" min="0" name="Kotmale Drinking Yoghurt Strawberry" data-price="160" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <div class="item">
+          <label>Kotmale Stirred Yoghurt Vanilla</label>
+          <input type="number" min="0" name="Kotmale Stirred Yoghurt Vanilla" data-price="140" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <div class="item">
+          <label>Nestle Milkmaid Ice Coffee Mix</label>
+          <input type="number" min="0" name="Nestle Milkmaid Ice Coffee Mix" data-price="890" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <button type="button" id="Cart3" class="btn">Add to Cart</button><br><br>
+      </section>
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ambewela Flavoured Milk Choco</td>
+            <td>1.00 L</td>
+            <td>Rs. 580.00</td>
+          </tr>
+          <tr>
+            <td>Astra Fat Spread Butter</td>
+            <td>100.00 g</td>
+            <td>Rs. 200.00</td>
+          </tr>
+          <tr>
+            <td>Happy Cow Creamy Cheese</td>
+            <td>113.00 g</td>
+            <td>Rs. 1220.00</td>
+          </tr>
+          <tr>
+            <td>Kotmale Drinking Yoghurt Strawberry</td>
+            <td>180.00 ml</td>
+            <td>Rs. 160.00</td>
+          </tr>
+          <tr>
+            <td>Kotmale Stirred Yoghurt Vanilla</td>
+            <td>80.00 g</td>
+            <td>Rs. 140.00</td>
+          </tr>
+          <tr>
+            <td>Nestle Milkmaid Ice Coffee Mix</td>
+            <td>390. 00g</td>
+            <td>Rs. 890.00</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <section class="productorderdetails">
+        <h2>Meat & Seafood</h2>
+        <div class="item">
+          <label>Fresh Harvest Prawns Full Cleaned Large</label>
+          <input type="number" min="0" name="Fresh Harvest Prawns Full Cleaned Large" data-price="7320" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Fresh Harvest Tuna Cubes</label>
+          <input type="number" min="0" name="Fresh Harvest Tuna Cubes" data-price="9080" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Crescent Chicken Mini Burgers</label>
+          <input type="number" min="0" name="Crescent Chicken Mini Burgers" data-price="2270" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Elephant House Big Chicken Sausages</label>
+          <input type="number" min="0" name="Elephant House Big Chicken Sausages" data-price="1720" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Damaco Foods Pangasius Fillet</label>
+          <input type="number" min="0" name="Damaco Foods Pangasius Fillet" data-price="1390" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <div class="item">
+          <label>Fresh Harvest Crab Meat</label>
+          <input type="number" min="0" name="Fresh Harvest Crab Meat" data-price="12750" placeholder="Enter in Kilograms" class="productqty">
+        </div>
+        <button type="button" id="Cart4" class="btn">Add to Cart</button><br><br>
+      </section>
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fresh Harvest Prawns Full Cleaned Large</td>
+            <td>500.00 g</td>
+            <td>Rs. 3660.00</td>
+          </tr>
+          <tr>
+            <td>Fresh Harvest Tuna Cubes</td>
+            <td>250.00 g</td>
+            <td>Rs. 2270.00</td>
+          </tr>
+          <tr>
+            <td>Crescent Chicken Mini Burgers</td>
+            <td>200.00 g</td>
+            <td>Rs. 454.00</td>
+          </tr>
+          <tr>
+            <td>Elephant House Big Chicken Sausages</td>
+            <td>300.00 g</td>
+            <td>Rs. 820.00</td>
+          </tr>
+          <tr>
+            <td>Damaco Foods Pangasius Fillet</td>
+            <td>1.00 kg</td>
+            <td>Rs. 1390.00</td>
+          </tr>
+          <tr>
+            <td>Fresh Harvest Crab Meat</td>
+            <td>500.00 g</td>
+            <td>Rs. 6375.00</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <section class="productorderdetails">
+        <h2>Baking & Cooking Ingredients</h2>
+        <div class="item">
+          <label>Motha Baking Powder</label>
+          <input type="number" min="0" name="Motha Baking Powder" data-price="380" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <div class="item">
+          <label>Fortune Coconut Oil</label>
+          <input type="number" min="0" name="Fortune Coconut Oil" data-price="1390" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <div class="item">
+          <label>Keells White Sugar</label>
+          <input type="number" min="0" name="Keells White Sugar" data-price="298" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <div class="item">
+          <label>MD Cream Caramel Pudding Mix</label>
+          <input type="number" min="0" name="MD Cream Caramel Pudding Mix" data-price="160" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <div class="item">
+          <label>Keells Table Salt</label>
+          <input type="number" min="0" name="Keells Table Salt" data-price="185" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <div class="item">
+          <label>Delmege Essence Chocolate</label>
+          <input type="number" min="0" name="Delmege Essence Chocolate" data-price="220" placeholder="Enter in Quantity" class="productqty">
+        </div>
+        <button type="button" id="Cart5" class="btn">Add to Cart</button><br><br>
+      </section>
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Motha Baking Powder</td>
+            <td>100.00 g</td>
+            <td>Rs. 380.00</td>
+          </tr>
+          <tr>
+            <td>Fortune Coconut Oil</td>
+            <td>1.00 L</td>
+            <td>Rs. 1390.00</td>
+          </tr>
+          <tr>
+            <td>Keells White Sugar</td>
+            <td>1.00 kg</td>
+            <td>Rs. 298.00</td>
+          </tr>
+          <tr>
+            <td>MD Cream Caramel Pudding Mix</td>
+            <td>150.00 g</td>
+            <td>Rs. 160.00</td>
+          </tr>
+          <tr>
+            <td>Keells Table Salt</td>
+            <td>1.00 kg</td>
+            <td>Rs. 185.00</td>
+          </tr>
+          <tr>
+            <td>Delmege Essence Chocolate</td>
+            <td>28.00 ml</td>
+            <td>Rs. 220.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div><br>
+  </form> 
+  <script src = "Javascript/sem2.js"></script><br><br>
+</body>
+<footer class="footer">
+  <!--Keells (2022a). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://keellssuper.com/FAQPage [Accessed 11 May. 2024]. -->
+  <!--Keells (2022b). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://keellssuper.com/contactus [Accessed 11 May. 2024]. -->
+  <!--Keells (2022c). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://keellssuper.com/TermsAndConditions [Accessed 11 May. 2024]. -->
+  <!--Keells (2022d). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://www.facebook.com/Keells.SL?mibextid=ZbWKwL [Accessed 11 May. 2024].-->
+  <!--Keells (2022e). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://twitter.com/keells_sl [Accessed 11 May. 2024].-->
+  <!--Keells (2022f). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://youtube.com/@Keells_SL?feature=shared [Accessed 11 May. 2024].-->  
+  <!--Keells (2022g). 4 EVER Venivel Face Wash (100ml). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=115254&4Ever_Venivel_Face_Wash_100ml [Accessed 11 May. 2024]. -->
+  <!--Keells (2022h). Ambewela Flavoured Milk Choco (1000ml). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=117561&Ambewela_Flavoured_Milk_Choco_1000ml [Accessed 11 May. 2024]. -->
+  <!--Keells (2022i). Astra Fat Spread Butter (100g).html. Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=13067&Astra_Fat_Spread_100g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022j). Carrot (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=915007&Carrot [Accessed 11 May. 2024]. -->
+  <!--Keells (2022k). Chandanalepa Whitening Cream (20g).html. Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=120390&Chandanalepa_Whitening_Cream_20g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022l). Glow & Lovely Advanced Multi Vitamin Cream (50g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=60203&Glow_&_Lovely_Multivitamin_Cream_50g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022m). Green Beans (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=915008&Green_Beans [Accessed 11 May. 2024]. -->
+  <!--Keells (2022o). Happy Cow Cheese (113g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=15088&Happy_Cow_Cheese_Tin_113g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022p). Kotmale Drinking Yoghurt Strawberry (180ml). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=114203&Kotmale_Drin._Yoghurt_St/Berry_180ml [Accessed 11 May. 2024]. -->
+  <!--Keells (2022q). Kotmale Stirred Yoghurt Vanilla (80g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=118816&Kotmale_Stirred_Yoghurt_Vanilla_80ml [Accessed 11 May. 2024]. -->
+  <!--Keells (2022r). Natures Secret Hand Cream Cinnamon (50ml). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=111115&Natures_Secret_H/Cream_Cinnamon_50ml [Accessed 11 May. 2024]. -->
+  <!--Keells (2022s). Nestle Milkmaid Ice Coffee Mix (390g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=111069&Nestle_Milkmaid_Ice_Coffee_Mix_390g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022t). Pond's Super Light Gel (147g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=122672&Ponds_Super_Light_Gel_25g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022u). Potatoes (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=915013&Potatoes [Accessed 11 May. 2024].-->
+  <!--Keells (2022v). Pumpkin (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=914039&Pumpkin [Accessed 11 May. 2024].-->
+  <!--Keells (2022w). Red Onions (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=914043&Red_Onions [Accessed 11 May. 2024].-->
+  <!--Keells (2022x). Tomatoes (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=915016&Tomatoes [Accessed 11 May. 2024].-->
+  <!--Keells (2022y). Velvet Body Lotion Glow Perfect (225ml). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=115907&Velvet_Body_Lotion_Glow_Perfec_225ml [Accessed 11 May. 2024].-->
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Useful links</h4>
+        <ul>
+          <li><a href="Loyalty registration.html">Loyalty registration
+          <li><a href="About us.html">About us</a></li>
+          <li><a href="https://keellssuper.com/TermsAndConditions">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="https://keellssuper.com/FAQPage">FAQ</a></li>
+          <li><a href="https://keellssuper.com/contactus">Contact us</a></li>
+          <li><a href="#">Payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/Keells.SL?mibextid=ZbWKwL">Facebook</a></li>
+          <li><a href="https://twitter.com/keells_sl">Twitter</a></li>
+          <li><a href="https://youtube.com/@Keells_SL?feature=shared">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="right"><p>&copy; 2024 Grocies Supermarket All rights reserved</p></div>
+</footer>
+</html>

@@ -1,0 +1,291 @@
+/* Order */
+.orderForm {
+    margin-top: 4%;
+}
+
+.productorderdetails {
+    padding: 0 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.productorderdetails:hover {  
+    box-shadow: 1px 1px 10px 4px cadetblue;
+}
+
+.cartgrid {
+    margin-top: -2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two grids per line */
+    grid-gap: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.item {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.ordersum {
+    margin-top: -2%;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.ordersum, .ordersumth, td {
+    border: 1px solid black;
+}
+
+.ordersumth, td {
+    padding: 10px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .ordersumth, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cartTable {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .ordersum {
+        font-size: 14px;
+    }
+
+    .ordersumth, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    #cartTable thead {
+        display: block;
+    }
+
+    #cartTable tbody {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #cartTable tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    #cartTable td {
+        display: table-cell;
+        text-align: left;
+    }
+}
+
+/*payment page - table*/
+.ordersum2 {
+    margin-top: -2%;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.ordersum2, .ordersumth2, td {
+    border: 1px solid black;
+}
+
+.ordersumth2, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .ordersumth2, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    #orderTable2 {
+        margin-top: -7%;
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .ordersum2 {
+        font-size: 14px;
+    }
+
+    .ordersumth2, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    #orderTable2 thead {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    #orderTable2 tbody {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    #orderTable2 tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    #orderTable2 td {
+        display: table-cell;
+        text-align: left;
+    }
+}
+
+.productqty {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.popup {
+    font-size: large;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popbtn {
+    border: .2rem solid;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color: black;
+    cursor: pointer;
+    background: none;
+}
+
+.popbtn:hover {
+    background: rgb(5, 58, 5);
+    color: #fff;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .ordersum {
+        margin-top: -6%;
+    }
+
+    .cartgrid {
+        grid-template-columns: 1fr; /* Single grid per line on mobile */
+    }
+
+    .product-table, .ordersum {
+        font-size: 1.2rem;
+    }
+
+    .popbtn {
+        padding: .5rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .item {
+        font-size: 1.4rem;
+    }
+
+    .productorderdetails, .popup {
+        padding: 10px;
+    }
+
+    .btn {
+        padding: .6rem 2rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popbtn {
+        padding: .3rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .item {
+        font-size: 1.4rem;
+    }
+
+    .productorderdetails, .popup {
+        padding: 5px;
+    }
+}

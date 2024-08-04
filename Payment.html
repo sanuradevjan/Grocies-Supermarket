@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocies Supermarket - Payment Page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/sem2.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./CSS/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./CSS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./CSS/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <section>
+      <nav>
+        <img src="CSS/Images/cart.png" alt="Logo" class="logo">
+        <a href="Order.html"><img src="CSS/Images/order.png" alt="cart" class="orderrr"></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Dairy.html">Dairy</a></li>
+          <li><a href="Vegetables.html">Vegetables</a></li>
+          <li><a href="Fruits.html">Fruits</a></li>
+          <li><a href="Meat & Seafood.html">Meat & Seafood</a></li>
+          <li><a href="Baking & Cooking.html">Baking & Cooking</a></li>
+          <li><a href="Cosmetics & Skin.html">Cosmetics & Skin</a></li>
+        </ul>
+        <div class="navbar">
+          <div class="menu">
+            <button class="menu-name">Menu</button>
+            <div class="menu-content">
+              <a href="index.html">Home</a>
+              <a href="Dairy.html">Dairy</a>
+              <a href="Vegetables.html">Vegetables</a>
+              <a href="Fruits.html">Fruits</a>
+              <a href="Meat & Seafood.html">Meat & Seafood</a>
+              <a href="Baking & Cooking.html">Baking & Cooking</a>
+              <a href="Cosmetics & Skin.html">Cosmetics & Skin</a>
+            </div>
+          </div>
+        </div>
+        <form action="#" method="get">
+          <input type="text" id="myInput" placeholder="Search">
+        </form>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <h1 class="heading"><span> Order Summary </span></h1>
+    <table id="orderTable2" class="ordersum2">
+      <thead>
+        <tr>
+          <th class="ordersumth2">Item</th>
+          <th class="ordersumth2">Quantity/Kg</th>
+          <th class="ordersumth2">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+          <!-- Order items will be populated here -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2" class="ordersumth2">Total</th>
+          <th id="totalPrice" class="ordersumth2">RS. 0.00</th>
+        </tr>
+      </tfoot>
+    </table><br><hr>
+    <h1 class="heading"><span>Place Your Order</span></h1>
+    <section class="order-container">
+      <div class="order">
+        <form id="orderForm" class="order-form">
+          <h3>Billing Details:</h3>
+              Name: <input type="text" name="name" required class="name input-field" placeholder="Enter Your Name"><br><br>
+              Phone number: <input type="tel" name="phoneno" minlength="10" maxlength="11" placeholder="Enter Phone Number" required class="phoneno2 input-field"><br><br>
+              Email: <input type="email" name="email" required class="email2 input-field" placeholder="Enter Your Email"><br><br>
+              Address: <input type="text" name="address" required class="address input-field" placeholder="Enter Your Address"><br><br>
+              City: <input type="text" name="city" required class="city input-field" placeholder="Enter Your City"><br><br>
+              Zip Code: <input type="number" name="zip" required class="zipcode input-field" placeholder="Enter Your City Zipcode"><br>
+        </form>
+      </div>
+      <div class="order">
+        <form id="paymentForm" class="order-form">
+          <h3>Payment Details:</h3>
+              Payment Method: <select name="payment-method" class="payment input-field">
+                <option value="" disabled selected>Select Your Payment Method</option>
+                <option value="visa">Visa</option>
+                <option value="master">Master</option></select><br><br>
+              Card Number: <input type="number" name="card-number" required class="cardno input-field" placeholder="Enter Your Card Number"><br><br>
+              Expiration Date: <input type="month" name="expiration-date" minlength="16" maxlength="16" required class="exdate input-field" placeholder="Enter Your Card Expiration Date"><br><br>
+              CVV: <input type="number" name="cvv" required class="cvv input-field" placeholder="Enter Your Card CVV"><br><br>
+        </form>
+      </div>
+    </section>
+
+    <center>
+      <button class="btn" type="button" onclick="placeOrder()">Place Order</button>
+    </center>
+
+    <div class="popup" id="orderConfirmation">
+      <center>
+        <h2>Thank You For Your Purchase</h2>
+        <p>Your order has been placed. Expected delivery date: <span id="deliveryDate"></span></p>
+        <button onclick="closePopup()" class="popbtn">Close</button>
+      </center>
+    </div>
+  </main><br>
+
+  <script src="Javascript/sem2.js"></script>
+  <script src="Javascript/payment.js"></script>
+
+</body>
+<footer class="footer">
+  <!-- Footer content here -->
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Useful links</h4>
+        <ul>
+          <li><a href="Loyalty registration.html">Loyalty registration</a></li>
+          <li><a href="About us.html">About us</a></li>
+          <li><a href="https://keellssuper.com/TermsAndConditions">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="https://keellssuper.com/FAQPage">FAQ</a></li>
+          <li><a href="https://keellssuper.com/contactus">Contact us</a></li>
+          <li><a href="#">Payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/Keells.SL?mibextid=ZbWKwL">Facebook</a></li>
+          <li><a href="https://twitter.com/keells_sl">Twitter</a></li>
+          <li><a href="https://youtube.com/@Keells_SL?feature=shared">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="right"><p>&copy; 2024 Grocies Supermarket All rights reserved</p></div>
+</footer>
+</html>

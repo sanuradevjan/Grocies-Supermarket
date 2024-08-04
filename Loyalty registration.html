@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocies Supermarket - Loyalty Registration</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/table.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./CSS/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./CSS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./CSS/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <section>
+      <nav><!--This is the navigation tag which holds the navigation of the website-->
+        <img src="CSS/Images/cart.png" alt="Logo" class="logo"><!--This is the logo of the website-->
+        <a href="Order.html"><img src="CSS/Images/order.png" alt="cart" class="orderrr"></a>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>        
+          <li><a href="Dairy.html">Dairy</a></li>
+          <li><a href="Vegetables.html">Vegetables</a></li>
+          <li><a href="Fruits.html">Fruits</a></li>
+          <li><a href="Meat & Seafood.html">Meat & Seafood</a></li>
+          <li><a href="Baking & Cooking.html">Baking & Cooking</a></li>
+          <li><a href="Cosmetics & Skin.html">Cosmetics & Skin</a></li>
+        </ul>
+        <div class="navbar">
+          <div class="menu">
+            <button class="menu-name">Menu</button>
+            <div class="menu-content">
+              <a href="index.html">Home</a>        
+              <a href="Dairy.html">Dairy</a>
+              <a href="Vegetables.html">Vegetables</a>
+              <a href="Fruits.html">Fruits</a>
+              <a href="Meat & Seafood.html">Meat & Seafood</a>
+              <a href="Baking & Cooking.html">Baking & Cooking</a>
+              <a href="Cosmetics & Skin.html">Cosmetics & Skin</a>
+            </div>
+          </div> 
+        </div>      
+        <form action="#" method="get"><!-- This form allows users to input text for searching.Users can type their search term in the text box and submit the form to perform a search. -->
+          <input type="text" id="myInput" placeholder="Search">
+        </form>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section class="para-box" id="para-box">
+      <p class="para">From the Grocies Supermarket's Loyalty Program, greetings! Gain access to exclusive rewards 
+         and benefits for your consistent purchases. Joining our loyalty program is easy and cost-free! Just fill 
+         out the form below to choose the loyalty program that most closely matches your preferred methods of purchase.</p>
+    </section>
+    
+    <section>
+      <div>
+        <table  style="width: 100%;">
+          <tr>
+            <th>Loyalty Scheme</th>
+            <th>Description</th>
+            <th>Benefits</th>
+          </tr>
+          <tr>
+            <th>Points bundle </th>
+            <td>
+              <ul>
+                <li>Earn rewards as you spend.</li>
+                <li>Redeem points for discounts on your favourites.</li>
+                <li>Shop More, Save More!</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Get rewarded with 1 point for every rupee.</li>
+                <li>Enjoy double points on specially selected week days.</li>
+                <li>Celebrate your special days with bonus points.</li>
+                <li>Gain access to exclusive promotions.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Monthly bundle</th>
+            <td>
+              <ul>
+                <li>Set your monthly spending goal.</li>
+                <li>Unlock exclusive discounts on your next purchase.</li>
+                <li>Ideal for budget-conscious shoppers.</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Personalized spending goal that suits your monthly needs(Rs.20,000/Rs.30,000/Rs.40,000).</li>
+                <li>Enjoy a straightforward 12% discount on your next purchase by reaching your monthly goal.</li>
+                <li>No need to track points,our program offers simple savings!</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <br><hr><br>
+
+    <h1 class="regist-heading"><span> Registration Form </span></h1>
+    <section>
+      <div class="registration">
+        <form method="post" class="regist-form">
+          First name: <input type="text" name="fname" placeholder="Enter Your First Name" required class="input-field"><br><br>
+          Last name: <input type="text" name="lname" placeholder="Enter Your Last Name" required class="input-field"><br><br>
+          Email: <input type="email"  name="email" placeholder="Enter Your Email Address" required class="input-field"><br><br>
+          Phone number: <input type="tel" name="phoneno" minlength="10" maxlength="11" placeholder="Enter Your Phone Number" required class="input-field"><br><br>
+          Birthday: <input type="date" name="bday" required class="input-field"><br><br>
+          Loyalty Scheme: <select name="loyalty" class="input-field"><option value="pointplus">Points Bundle</option><option value="monthlymax">Monthly Bundle</option></select>
+          <br><br>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <br>
+  </main> 
+</body>
+<footer class="footer">
+  <!--Keells (2022a). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://keellssuper.com/FAQPage [Accessed 11 May. 2024]. -->
+  <!--Keells (2022b). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://keellssuper.com/contactus [Accessed 11 May. 2024]. -->
+  <!--Keells (2022c). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://keellssuper.com/TermsAndConditions [Accessed 11 May. 2024]. -->
+  <!--Keells (2022d). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://www.facebook.com/Keells.SL?mibextid=ZbWKwL [Accessed 11 May. 2024].-->
+  <!--Keells (2022e). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://twitter.com/keells_sl [Accessed 11 May. 2024].-->
+  <!--Keells (2022f). Keells Online - Sri Lanka’s Freshest Online Grocery Store. Keells Online. Available at: https://youtube.com/@Keells_SL?feature=shared [Accessed 11 May. 2024].-->  
+  <!--Keells (2022g). 4 EVER Venivel Face Wash (100ml). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=115254&4Ever_Venivel_Face_Wash_100ml [Accessed 11 May. 2024]. -->
+  <!--Keells (2022h). Ambewela Flavoured Milk Choco (1000ml). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=117561&Ambewela_Flavoured_Milk_Choco_1000ml [Accessed 11 May. 2024]. -->
+  <!--Keells (2022i). Astra Fat Spread Butter (100g).html. Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=13067&Astra_Fat_Spread_100g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022j). Carrot (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=915007&Carrot [Accessed 11 May. 2024]. -->
+  <!--Keells (2022k). Chandanalepa Whitening Cream (20g).html. Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=120390&Chandanalepa_Whitening_Cream_20g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022l). Glow & Lovely Advanced Multi Vitamin Cream (50g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=60203&Glow_&_Lovely_Multivitamin_Cream_50g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022m). Green Beans (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=915008&Green_Beans [Accessed 11 May. 2024]. -->
+  <!--Keells (2022o). Happy Cow Cheese (113g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=15088&Happy_Cow_Cheese_Tin_113g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022p). Kotmale Drinking Yoghurt Strawberry (180ml). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=114203&Kotmale_Drin._Yoghurt_St/Berry_180ml [Accessed 11 May. 2024]. -->
+  <!--Keells (2022q). Kotmale Stirred Yoghurt Vanilla (80g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=118816&Kotmale_Stirred_Yoghurt_Vanilla_80ml [Accessed 11 May. 2024]. -->
+  <!--Keells (2022r). Natures Secret Hand Cream Cinnamon (50ml). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=111115&Natures_Secret_H/Cream_Cinnamon_50ml [Accessed 11 May. 2024]. -->
+  <!--Keells (2022s). Nestle Milkmaid Ice Coffee Mix (390g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=111069&Nestle_Milkmaid_Ice_Coffee_Mix_390g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022t). Pond's Super Light Gel (147g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=122672&Ponds_Super_Light_Gel_25g [Accessed 11 May. 2024]. -->
+  <!--Keells (2022u). Potatoes (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=915013&Potatoes [Accessed 11 May. 2024].-->
+  <!--Keells (2022v). Pumpkin (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=914039&Pumpkin [Accessed 11 May. 2024].-->
+  <!--Keells (2022w). Red Onions (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=914043&Red_Onions [Accessed 11 May. 2024].-->
+  <!--Keells (2022x). Tomatoes (1000g). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=915016&Tomatoes [Accessed 11 May. 2024].-->
+  <!--Keells (2022y). Velvet Body Lotion Glow Perfect (225ml). Keells Online. Available at: https://keellssuper.com/productDetail?itemcode=115907&Velvet_Body_Lotion_Glow_Perfec_225ml [Accessed 11 May. 2024].-->
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Useful links</h4>
+        <ul>
+          <li><a href="Loyalty registration.html">Loyalty registration
+          <li><a href="About us.html">About us</a></li>
+          <li><a href="https://keellssuper.com/TermsAndConditions">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="https://keellssuper.com/FAQPage">FAQ</a></li>
+          <li><a href="https://keellssuper.com/contactus">Contact us</a></li>
+          <li><a href="#">Payment options</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/Keells.SL?mibextid=ZbWKwL">Facebook</a></li>
+          <li><a href="https://twitter.com/keells_sl">Twitter</a></li>
+          <li><a href="https://youtube.com/@Keells_SL?feature=shared">Youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="right"><p>&copy; 2024 Grocies Supermarket All rights reserved</p></div>
+</footer>
+</html>
