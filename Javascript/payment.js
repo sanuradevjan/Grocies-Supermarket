@@ -1,6 +1,6 @@
 // Populate order table with cart details from localStorage
 function populateOrderTable() {
-    const orderTableBody = document.getElementById('orderTable').getElementsByTagName('tbody')[0];
+    const orderTableBody = document.getElementById('orderTable2').getElementsByTagName('tbody')[0];
     const totalPriceElement = document.getElementById('totalPrice');
     const cartDetails = JSON.parse(localStorage.getItem('cartDetails'));
 
