@@ -45,6 +45,7 @@ h2 {
     text-align: left;
 }
 
+/* Mobile responsive styles */
 @media (max-width: 768px) {
     .ordersumth, td {
         padding: 8px;
@@ -61,21 +62,26 @@ h2 {
 
     .ordersum {
         font-size: 14px;
+        display: block;
+        overflow-x: auto;
     }
 
     .ordersumth, td {
         padding: 6px;
         font-size: 12px;
+        white-space: nowrap; /* Prevent text from wrapping */
     }
 
     #cartTable thead {
-        display: block;
+        display: table;
+        width: 100%;
+        table-layout: fixed;
     }
 
     #cartTable tbody {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+        display: table;
+        width: 100%;
+        table-layout: fixed;
     }
 
     #cartTable tr {
@@ -87,8 +93,12 @@ h2 {
     #cartTable td {
         display: table-cell;
         text-align: left;
+        white-space: nowrap; /* Prevent text from wrapping */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Add ellipsis for overflow text */
     }
 }
+
 
 /*payment page - table*/
 .ordersum2 {
@@ -131,31 +141,19 @@ h2 {
         padding: 6px;
         font-size: 12px;
     }
-
-    #orderTable2 thead {
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    #orderTable2 tbody {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-        width: 100%;
-    }
-
-    #orderTable2 tr {
-        display: table;
-        width: 100%;
-        table-layout: fixed;
-    }
-
-    #orderTable2 td {
-        display: table-cell;
-        text-align: left;
-    }
 }
+
+@media (max-width: 600px) {
+    #orderTable2 {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    #orderTable2 th, td {
+      padding: 12px 8px;
+    }
+  }
 
 .productqty {
     width: 95%;
